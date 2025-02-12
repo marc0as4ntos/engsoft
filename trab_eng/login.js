@@ -1,15 +1,15 @@
-document.getElementById("cadastroForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio do formulário
 
+    let matricula = document.getElementById("matricula").value;
     let senha = document.getElementById("senha").value;
-    let confirmaSenha = document.getElementById("confirmaSenha").value;
     let mensagemErro = document.getElementById("mensagemErro");
 
-    if (senha !== confirmaSenha) {
-        mensagemErro.textContent = "As senhas não coincidem!";
+    // Simulação de login (substituir por autenticação real no backend)
+    if (matricula === "12345" && senha === "senha123") {
+        alert("Login realizado com sucesso!");
+        window.location.href = "dashboard.html"; // Redireciona para outra página
     } else {
-        mensagemErro.textContent = "";
-        alert("Cadastro realizado com sucesso!");
-        // Aqui você pode enviar os dados para o backend via fetch() ou outra API
+        mensagemErro.textContent = "Matrícula ou senha incorreta!";
     }
 });

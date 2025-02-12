@@ -19,10 +19,6 @@ body {
     width: 350px;
     text-align: center;
     border: 1.5px solid rgb(147, 78, 211);
-    
-
-    
-    
 }
 
 .header {
@@ -49,8 +45,6 @@ h1 {
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
-    
-    
 }
 
 label {
@@ -61,10 +55,21 @@ label {
 
 input {
     padding: 8px;
-    
     border-radius: 5px;
     font-size: 14px;
     border: 1px solid #964ba0;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -87,11 +92,7 @@ button:hover {
     margin-top: 10px;
 }
 
-
-
-
-#top1{
+#top1 {
     position: absolute;
     top: 170px;
-    
 }
